@@ -1,0 +1,822 @@
+@import url('https://fonts.googleapis.com/css?family=Carter+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Damion&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+}
+
+/* --- GOLBAL VAR --- */
+
+.container{
+    width: 95%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    color:#fff;
+    text-decoration: none;
+}
+
+.active{
+    border-bottom: 3px solid #ff6d00;
+}
+
+/* --- HEADER / NAV SECTION --- */
+
+/* header{
+    height: 90px;
+    background: #8b4a2e;
+}
+
+header .bars{
+    display: none;
+    color: #fff;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+nav{
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%,7%);
+    z-index: 99;
+}
+
+nav .nav-links{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav .nav-links .nav-link{
+    padding-top: 17px;
+}
+
+nav .nav-links .nav-link a:hover{
+    border-bottom: 3px solid #ff6d00;
+}
+
+nav .nav-links .brand-icon{
+    height: 160px;
+    width: 180px;
+}
+
+nav .nav-links .brand-icon img{
+    width: 100%;
+    height: 100%;
+}
+
+nav .nav-links .nav-link a{
+    font-family: 'Carter One';
+    font-size: 25px;
+} */
+
+
+
+header{
+    background: #8b4a2e;
+    display: flex;
+    height: 90px;
+}
+
+header .bars{
+    display: none;
+    color: #fff;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+header .container .logo{
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translate(-60%, -50%);
+    height: 160px;
+    width: 180px;
+}
+
+header .container .logo img{
+    height: 100%;
+    width: 100%;
+}
+
+header .container nav{
+    width: 100%;
+    height: 100%;
+}
+
+header .container nav .nav-links{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    margin: 0 auto;
+}
+
+header .container nav .nav-links .nav-link a{
+    color: #fff;
+    font-size: 25px;
+    font-family: 'Carter One';
+}
+
+nav .nav-links .nav-link a:hover{
+    border-bottom: 3px solid #ff6d00;
+}
+
+header .container nav .nav-links .marg-right{
+    margin-right: 100px;
+}
+
+header .container nav .nav-links .marg-left{
+    margin-left: 100px;
+}
+
+/* Banner Section */
+
+.banner{
+    display: flex;
+    align-items: center;
+    background-attachment: fixed;
+    background-image: url('../img/donuts-dark.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.banner .container{
+    padding: 70px 0;
+}
+
+
+.banner .center-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    color: #fff;
+    padding-top: 70px;
+}
+
+.banner .center-content .title{
+    font-style: oblique;
+    font-size: 90px;
+    font-weight: 900;
+    text-shadow: 2px 2px 2px #000;
+}
+
+.banner .center-content .sub-title{
+    font-family: 'Damion';
+    font-size: 40px;
+    font-weight: 400;
+    text-shadow: 2px 2px 2px #000;
+}
+
+.banner .btn{
+    margin: 70px 0;
+}
+
+.banner .btn a{
+    background: #26659f;
+    padding: 5px 30px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.banner .btn a:hover{
+    background: #f1f1f1;
+    color: #26659f;
+}
+
+.banner .social-media .social-icons{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+
+.banner .social-media .social-icons .icon{
+    margin: 10px 0;
+}
+.banner .social-media .social-icons .icon i{
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.banner .social-media .social-icons .icon i.fab.fa-facebook-f:hover{
+    background: #26659f;
+}
+
+.banner .social-media .social-icons .icon i.fab.fa-google-plus-g:hover{
+    background: #DD4B39;
+}
+
+.banner .social-media .social-icons .icon i.fab.fa-twitter:hover{
+    background: #1da1f2;
+}
+
+.banner .social-media .social-icons .icon i.fab.fa-instagram:hover{
+    background: #fb3958;
+}
+
+/* --- NEWSLETTER SECTION --- */
+
+.newsletter{
+    background: #f1f1f1;
+}
+
+.newsletter label{
+    font-size: 21px;
+    font-weight: 800;
+    margin-right: 20px;
+}
+
+.newsletter form{
+    margin: 10px 0;
+}
+
+.newsletter .form-control{
+    height: 25px;
+    width: 20%;
+    margin-right: 20px;
+}
+
+.newsletter .btn-control{
+    border: none;
+    background: #138bd7;
+    color: #fff;
+    width: 6%;
+    padding: 5px 0;
+}
+
+.newsletter .btn-control:hover{
+    cursor: pointer;
+    background: #457da7;
+}
+
+/* ABOUT SECTION  */
+.about{
+    height: 100%;
+}
+
+.about .jelly{
+    background: url('../img/jelly.png');
+    background-repeat: repeat-x;
+    background-size: contain;
+    height: 140px;
+}
+
+.about .jelly .img{
+    display: flex;
+}
+
+.about .container{
+    display: flex;
+    margin: 70px auto;
+}
+
+.about .container .box{
+    width: 50%;
+    padding: 20px 0;
+}
+
+.about .container .box .left-image{
+    width: 80%;
+    height: auto;
+    box-shadow: 7px 7px 14px #000;
+}
+
+.about .container .box .left-image img{
+    width: 100%;
+    height: 100%;
+}
+
+.about .container .box .about-text .title{
+    margin-bottom: 30px;
+    font-size: 25px;
+}
+
+.about .container .box .about-text p{
+    line-height: 2;
+    font-size: 19px;
+}
+
+.about .container .box .btn{
+    margin-top: 40px;
+}
+
+.about .container .box .btn a{
+    background: #26659f;
+    font-size: 18px;
+    padding: 5px 20px;
+    border-radius: 5px;
+}
+
+.about .container .box .btn a:hover{
+    background: #1b63accf;
+    color: #fff;
+}
+
+/* --- VETERAN SECTION --- */
+
+.veteran-block{
+    margin: 10px 0;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+.veteran-block .container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.veteran-block .block-text{
+    color: #fff;
+    text-shadow: 5px 5px 5px #000;
+    line-height: 1.5;
+}
+
+.veteran-block .block-text h2{
+    font-size: 45px;
+}
+
+.veteran-block .block-text p{
+    font-size: 23px;
+    text-align: center;
+}
+
+.veteran-block .gif{
+    background: url('https://media.giphy.com/media/giFfKuIvwN0UPEiGFR/giphy.gif') no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 200px;
+    width: 260px;
+}
+
+
+/* --- Music Block --- */
+
+.music-monday{
+    margin: 100px 0;
+}
+
+.music-monday .container{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(4, .5fr);
+}
+
+.music-monday .promo-vid{
+    grid-column: 1/7;
+    grid-row: 1/5;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.music-monday .promo-vid iframe{
+    width: 100%;
+    height: 100%;
+}
+
+
+.music-monday h2{
+    grid-column: 8/12;
+    margin-bottom: 45px;
+}
+
+.music-monday p{
+    grid-column: 8/12;
+    margin-top: -25px;
+}
+
+.music-monday form{
+    grid-column: 8/12;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    margin-bottom: -40px;
+}
+
+.music-monday form .form-control{
+    margin-bottom: 20px;
+    padding: 2px 1px 2px 0;
+}
+
+.form-phone{
+    grid-column: 1/2;
+}
+
+.form-email{
+    grid-column: 1/2;
+}
+
+.music-monday form .btn{
+    grid-column: 1/2;
+}
+
+.btn-control{
+    width: 60%;
+    background:
+    #1b63accf;
+    border: none;
+    color:
+    #fff;
+    border-radius: 5px;
+    padding: 3px 0;
+}
+
+.btn-control:hover{
+    cursor: pointer;
+}
+
+.msg-control{
+    grid-column: 3/6;
+    grid-row: 1/5;
+    width: 100%;
+    resize: none;
+}
+
+/* --- Contact --- */
+
+.contact{
+    padding: 100px 0;
+    background: #393939;
+}
+
+.contact .container{
+    display: flex;
+    justify-content: center;
+}
+
+
+.contact .contact-info{
+    display: flex;
+    width: 30%;
+    border-radius: 30px;
+}
+
+.contact .contact-info .icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.contact .contact-info .icons .icon{
+    display: flex;
+    color: #fff;
+}
+
+.contact .contact-info .icons .icon i{
+    margin-right: 30px;
+}
+
+@media(max-width:1520px){
+
+.about .container .box .about-text .title{
+    font-size: 17px;
+}
+
+.about .container .box .btn{
+    margin-top: 23px;
+    font-size: 14px;
+}
+
+.about .container .box .btn a{
+    font-size: 14px;
+}
+}
+
+
+@media (max-width: 1200px){
+
+    /* --- Navbar Section --- */
+
+header .container nav .nav-links .nav-link a{
+    font-size: 22px;
+}
+
+header .container .logo{
+    height: 140px;
+    width: 160px;
+}
+
+    /* --- Banner Section --- */
+
+.banner .center-content .title{
+    font-size: 75px;
+}
+
+
+
+    /* --- Newsletter Section --- */
+
+.newsletter form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.newsletter label{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.newsletter form .form-control{
+    width: 680px;
+    margin-bottom: 10px;
+}
+
+.newsletter .btn-control{
+    width: 28%;
+    margin-bottom: 10px;
+}
+
+    /* --- About Section --- */
+
+.about .container{
+    flex-direction: column;
+}
+
+.about .container .box{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.about .container .box .left-image{
+    width: 60%;
+    margin: 0 auto;
+}
+
+.about .container .box .about-text{
+    width: 60%;
+    margin: 0 auto;
+}
+
+.about .container .box .btn{
+    width: 60%;
+    margin: 23px auto 0;
+}
+
+    /* --- VETERAN SECTION --- */
+
+.veteran-block .container .block-text h2{
+    font-size: 23px;
+}
+
+.veteran-block .container .gif{
+    height: 160px;
+    width: 195px;
+}
+
+
+/* --- Music Monday --- */
+
+.music-monday .container{
+    grid-template-rows: auto;
+}
+   
+
+.music-monday .container .promo-vid{
+    grid-column: 1/13;
+    grid-row: 2;
+    height: 400px;
+    width: 60%;
+}
+
+.music-monday .container h2{
+    grid-column: 1/12;
+    grid-row: 1;
+    margin: 0 auto 30px;
+}
+
+.music-monday .container p{
+    grid-column: 2/12;
+    margin: 40px 0;
+}
+
+.music-monday form{
+    grid-column: 2/12;
+    margin-bottom: 0;
+}
+
+.music-monday .content-box p{
+    margin: 20px 0 30px 0;
+}
+
+}
+
+@media (max-width: 768px){
+
+    /*--- NAVBAR SECTION --- */
+
+
+header .bars{
+    display: block;
+    margin: 20px 0;
+    font-size: 55px;
+    z-index: 99;
+    position: absolute;
+}
+
+
+header .container nav .nav-links{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #000;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+header .container nav .nav-links .nav-link{
+    border: 2px solid #fff;
+    width: 100%;
+    text-align: center;
+    
+}
+
+.active{
+    border: none;
+}
+
+header .container nav .nav-links .nav-link a{
+    width: 100%;
+    height: 100%;
+    display: block;
+    padding: 20px 0;
+}
+
+header .container nav .nav-links .nav-link a:hover{
+    border: none;
+}
+
+header .container nav .nav-links .nav-link:hover{
+    background: rgb(2, 54, 131);
+}
+
+header .container nav .showing{
+    display: flex;
+    z-index: 98;
+}
+
+
+
+header .container nav .nav-links .marg-right,
+header .container nav .nav-links .marg-left{
+    margin: 0;
+}
+
+
+.banner .center-content .title{
+    font-size: 50px;
+}
+
+.banner .center-content .sub-title {
+    font-size: 30px;
+}
+
+.banner .btn a{
+    padding: 5px 17px;
+    font-size: 17px;
+}
+
+.newsletter .container form{
+    align-items: flex-start;
+}
+
+.newsletter label{
+    font-size: 16px;
+}
+
+.newsletter form .form-control{
+    width: 90%;
+}
+
+.about .container .jelly{
+    height: 100px;
+}
+
+.about .container{
+    margin: 0 auto;
+}
+
+.about .container .box .left-image{
+    width: 300px;
+}
+
+.about .container .box .about-text{
+    width: 100%;
+}
+
+.about .container .box .btn{
+    width: 100%;
+}
+
+.about .container .box .btn a{
+    padding: 5px 11px;
+}
+
+.veteran-block .container .gif{
+    width: 140px;
+    height: 132px;
+}
+
+.veteran-block .container .block-text h2{
+    font-size: 18px;
+}
+
+.veteran-block .container .block-text p{
+    font-size: 19px;
+    text-align: left;
+}
+
+/* --- Music Monday --- */
+
+.music-monday .container form{
+    display: block;
+}
+
+.music-monday .container .promo-vid{
+    width: 85%;
+}
+
+}
+
+@media (max-width: 420px){
+
+header .container .logo{
+    height: 120px;
+    width: 130px;
+    margin-left: 20px;
+}
+.banner .container .center-content{
+    margin-top: 100px;
+}
+
+.banner .center-content .title{
+    font-size: 35px;
+}
+
+.banner .center-content .sub-title {
+    font-size: 23px;
+}
+
+.banner .btn a{
+    padding: 5px 15px;
+    font-size: 14px;
+}
+
+
+.banner .social-media{
+    margin-top: -100px;
+}
+
+.newsletter form .form-control{
+    width: 250px;
+}
+
+.about .container .box .left-image{
+    width: 100%;
+}
+
+.about .container .box .about-text .title{
+    font-size: 14px;
+}
+
+.about .container .box .about-text p{
+    font-size: 15px;
+}
+
+.about .container .box .btn a{
+    font-size: 12px;
+}
+
+.veteran-block .container .block-text h2{
+    font-size: 15px;
+}
+
+.veteran-block .container .block-text p{
+    font-size: 15px;
+}
+
+
+
+/* --- Music Monday --- */
+
+.music-monday .container .promo-vid{
+    height: 200px;
+    width: 95%;
+}
+}

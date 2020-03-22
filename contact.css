@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css?family=Carter+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Damion&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+}
+
+/* --- GOLBAL VAR --- */
+
+.container{
+    width: 95%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    color:#fff;
+    text-decoration: none;
+}
+
+.active{
+    border-bottom: 3px solid #ff6d00;
+}
+
+/* --- HEADER / NAV SECTION --- */
+
+header{
+    background: #8b4a2e;
+    display: flex;
+    height: 90px;
+}
+
+header .bars{
+    display: none;
+    color: #fff;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+header .container .logo{
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translate(-60%, -50%);
+    height: 160px;
+    width: 180px;
+}
+
+header .container .logo img{
+    height: 100%;
+    width: 100%;
+}
+
+header .container nav{
+    width: 100%;
+    height: 100%;
+}
+
+header .container nav .nav-links{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    margin: 0 auto;
+}
+
+header .container nav .nav-links .nav-link a{
+    color: #fff;
+    font-size: 25px;
+    font-family: 'Carter One';
+}
+
+nav .nav-links .nav-link a:hover{
+    border-bottom: 3px solid #ff6d00;
+}
+
+header .container nav .nav-links .marg-right{
+    margin-right: 100px;
+}
+
+header .container nav .nav-links .marg-left{
+    margin-left: 100px;
+}
+/* --- Banner --- */
+
+.banner .map iframe{
+    width: 100%;
+}
+
+/* --- Form Section --- */
+
+.contact{
+    background: #1c1c1c;
+    color: #fff;
+}
+
+.contact .heading{
+    text-align: center;
+}
+
+.contact .heading h1{
+    font-size: 90px;
+    letter-spacing: 2px;
+    background: url(../img/spinkles.png);
+    background-position: center;
+    background-size: contain;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.heading p{
+    font-size: 15px;
+    color: #a2a2a2;
+    font-weight: 100;
+    margin: 20px 0 30px;
+    text-transform: capitalize;
+}
+
+.contact .container{
+    display: flex;
+}
+
+.contact .sub-heading{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact .contact-form{
+    width: 50%;   
+}
+
+.contact form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto 50px;
+}
+
+.contact form .form-control{
+    font-size: 14px;
+    margin-bottom: 40px;
+    padding: 10px 20px;
+    background: none;
+    color: #fff;
+    border: none;
+    border: 1px solid #9b9b9bf2;
+}
+
+.contact form .msg-control{
+    border: 1px solid #9b9b9bf2;
+    resize: none;
+}
+
+.contact form .btn{
+    font-size: 17px;
+    margin: 0 auto;
+    padding: 5px 50px;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    background: #ff214f;
+    cursor: pointer;
+}
+
+.contact form .btn:hover{
+    opacity: 0.7;
+}
+
+/*  Contact Info Section */
+
+.contact .contact-info .sub-heading{
+    margin-bottom: 20px;
+}
+
+.contact .contact-info .icons .icon{
+    margin-bottom: 50px;
+}
+
+.contact .contact-info .icons .icon i{
+    font-size: 25px;
+    margin-right: 50px;
+}
+
+
+@media (max-width: 1200px){
+
+    /* --- Navbar Section --- */
+
+    header .container nav .nav-links .nav-link a{
+        font-size: 22px;
+    }
+        
+    header .container .logo{
+        height: 140px;
+        width: 160px;
+    }
+}
+
+@media (max-width: 768px){
+
+    /*--- NAVBAR SECTION --- */
+
+    header .bars{
+        display: block;
+        margin: 20px 0;
+        font-size: 55px;
+        z-index: 99;
+        position: absolute;
+    }
+    
+    
+    header .container nav .nav-links{
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #000;
+        width: 100%;
+        display: none;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    
+    header .container nav .nav-links .nav-link{
+        border: 2px solid #fff;
+        width: 100%;
+        text-align: center;
+        
+    }
+    
+    .active{
+        border: none;
+    }
+    
+    header .container nav .nav-links .nav-link a{
+        width: 100%;
+        height: 100%;
+        display: block;
+        padding: 20px 0;
+    }
+    
+    header .container nav .nav-links .nav-link a:hover{
+        border: none;
+    }
+    
+    header .container nav .nav-links .nav-link:hover{
+        background: rgb(2, 54, 131);
+    }
+    
+    header .container nav .showing{
+        display: flex;
+        z-index: 98;
+    }
+    
+    
+    
+    header .container nav .nav-links .marg-right,
+    header .container nav .nav-links .marg-left{
+        margin: 0;
+    }
+
+
+/* Contact Section */
+
+.contact .heading h1{
+    font-size: 50px;
+    letter-spacing: 0;
+}
+
+.contact form{
+    width: 70%;
+}
+
+.contact form .form-control {
+    font-size: 14px;
+
+}
+
+.contact .container{
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact .contact-form{
+    width: 100%;
+}
+
+}
+@media (max-width: 406px){
+
+    header .container .logo{
+        height: 120px;
+        width: 130px;
+        margin-left: 20px;
+    }
+
+.contact .heading p{
+    font-size: 11px;
+}
+
+.contact .contact-info .icons .icon{
+    font-size: 14px;
+}
+}

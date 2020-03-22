@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="css/about.css" />
+    <link rel="stylesheet" href="./fontawesome-5.11.2/css/all.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <title>Doughnut Delights</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+          <div class="bars">
+              <i class="fas fa-bars"></i>
+          </div>
+          <div class="logo">
+              <img src="./img/donutDelightsLogo.png" alt="">
+          </div>
+          <nav>
+
+              <ul class="nav-links" data-aos="fade-in">
+                  <li class="nav-link"><a href="index.html">Home</a></li>
+                  <li class="nav-link marg-right"><a class="active" href="about.html">About</a></li>
+                  <li class="nav-link marg-left"><a href="menu.html">Menu</a></li>
+                  <li class="nav-link"><a href="contact.html">Contact</a></li>
+              </ul>
+
+          </nav>
+      </div>
+  </header>
+
+    <main>
+      <section class="content">
+        <div class="container">
+          <div class="text-box">
+            <div class="heading">
+              <h1>About Us</h1>
+            </div>
+            <div class="box">
+              <div class="sub-text">
+                <p>
+                  Doughnut Delights was started in 1971 by Melvin Furballski, an
+                  immigrant baker from the far east coast of Poland. Known far
+                  and wide for his delicate pastries, Melvin fled his homeland
+                  in search of a better life for his family. In 1970 he landed
+                  in New York City and by chance he found an open seat on a bus
+                  heading west. When an unexpected mechanical failure forced a
+                  three day delay in Champaign, Illinois, Furballski saw the
+                  need for a doughnut shop, so he decided to stay and make a new
+                  life for himself in Urbana, Illinois. With only one hundred
+                  dollars to his name, he found an abandoned breadshop and
+                  within two days he had one of a kind doughnuts flying off the
+                  racks faster than he could bake them and things have never
+                  slowed down.
+                </p>
+              </div>
+              <div class="box">
+                <div class="sub-text">
+                  <p>
+                    Now you can find that same great doughnut recipe plus dozens
+                    more still being made with the same love and care as when
+                    Doughnut Delights first opened. A bakery fire in the
+                    mid-1980s destroyed many of the shop's records...but NOT THE
+                    RECIPES. While many people might have viewed the fire as an
+                    excuse to quit, Melvin instead used it as an opportunity to
+                    reconfigure the interior design, allowing him to add the
+                    coffee roastery section as well. So when you visit, be
+                    prepared for the inviting mix of aromas from fresh-roasted
+                    coffee beans and fresh-baked donuts: It's the closest thing
+                    to "Breakfast Heaven" anywhere in the C-U area!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 100,
+        duration: 2000
+      });
+    </script>
+
+<script type="text/javascript">
+
+  $(document).ready(function () {
+    $('.bars').on('click', function () {
+      $('ul').toggleClass('showing');
+    });
+  });
+
+</script>
+  </body>
+</html>

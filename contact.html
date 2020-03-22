@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/contact.css">
+    <link rel="stylesheet" href="./fontawesome-5.11.2/css/all.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <title>Doughnut Delights</title>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="bars">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="logo">
+                <img src="./img/donutDelightsLogo.png" alt="">
+            </div>
+            <nav>
+  
+                <ul class="nav-links" data-aos="fade-in">
+                    <li class="nav-link"><a href="index.html">Home</a></li>
+                    <li class="nav-link marg-right"><a href="about.html">About</a></li>
+                    <li class="nav-link marg-left"><a href="menu.html">Menu</a></li>
+                    <li class="nav-link"><a class="active" href="contact.html">Contact</a></li>
+                </ul>
+  
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="banner">
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3051.248211137894!2d-88.2286871852021!3d40.1144716794014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880cd76a77607879%3A0xabcbde07e6508b09!2s2112+W+Main+St%2C+Urbana%2C+IL+61801!5e0!3m2!1sen!2sus!4v1447013869191" style="border:0" allowfullscreen="" width="600" height="450" frameborder="0"></iframe>
+            </div>
+        </div>
+        
+        <section class="contact">
+
+            <div class="heading">
+                <h1>Contact Us</h1>
+                <p>Please Fill The Form Below and we'll be in touch soon!</p>
+            </div>
+
+            <div class="container">
+
+                <div class="contact-form">
+                    <div class="sub-heading"><h3>Contact Form</h3></div>
+                    <form>   
+
+                    <input class="form-control" type="text" placeholder="Enter Full Name..." required>
+
+                    <input class="form-control" type="tel" placeholder="Enter Phone Number..." required>
+
+
+                    <input class="form-control" type="text" placeholder="Enter Your Email Adress..." required>
+
+
+
+                    <textarea class="form-control msg-control" name="message" placeholder="Enter Your Message..." cols="30" rows="10" required></textarea>
+
+ 
+                    <input class="btn" type="submit" value="Sumbit">
+
+                    </form>
+                </div>
+
+
+                <div class="contact-info">
+                    <div class="sub-heading">
+                        <h3>Contact Info</h3>
+                    </div>
+                    <ul class="icons">
+                        <li class="icon"><i class="fas fa-map-marker-alt"></i>2112 W Main St, Urbana, IL 61801</li>
+                        <li class="icon"><i class="fas fa-mobile-alt"></i> (217)-555- 1234</li>
+                        <li class="icon"><i class="far fa-envelope"></i>doughnutdelights@gmail.com </li>
+                        <li class="icon"><i class="fas fa-fax"></i>1-999-999-8888</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+        
+    </main>
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+          offset:100,
+          duration:2000
+      });
+    </script>
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+      $('.bars').on('click', function () {
+        $('ul').toggleClass('showing');
+      });
+    });
+  
+  </script>
+
+</body>
+</html>
